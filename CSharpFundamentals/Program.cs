@@ -7,17 +7,11 @@ namespace CSharpFundamentals
     {
         static void Main(string[] args)
         {
-            //PrintPrimitiveValues();
-            Person person = new Person
-            {
-                FirstName = "John",
-                LastName = "Smith"
-            };
-            person.Introduce();
-
-            Calculator calculator = new Calculator();
-            var result = calculator.Add(1, 2);
-            Console.WriteLine($"The result of sum is {result}");
+         /* 
+            PrintPrimitiveValues();
+            PersonInitializer();
+            CalculatorInitializer();
+         */
         }
 
         static void PrintPrimitiveValues()
@@ -35,6 +29,20 @@ namespace CSharpFundamentals
             Console.WriteLine($"{typeBoolean}, {typeBoolean.GetType()}");
 
         }
-
+        static void PersonInitializer()
+        {
+            Person person = new Person
+            {
+                FirstName = "John",
+                LastName = "Smith"
+            };
+            person.Introduce();
+        }
+        static void CalculatorInitializer()
+        {
+            Calculator calculator = new Calculator();
+            var result = calculator.Add(1, 2);
+            Console.WriteLine($"The result of sum is {result}");
+        }
     }
 }
