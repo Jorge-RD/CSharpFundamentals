@@ -1,4 +1,5 @@
 ﻿using System;
+using CSharpFundamentals.Math;
 
 namespace CSharpFundamentals
 {
@@ -13,6 +14,10 @@ namespace CSharpFundamentals
                 LastName = "Smith"
             };
             person.Introduce();
+
+            Calculator calculator = new Calculator();
+            var result = calculator.Add(1, 2);
+            Console.WriteLine($"The result of sum is {result}");
         }
 
         static void PrintPrimitiveValues()
