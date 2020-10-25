@@ -1,12 +1,18 @@
 ﻿using System;
 
-namespace first_project
+namespace CSharpFundamentals
 {
     class Program
     {
         static void Main(string[] args)
         {
-            PrintPrimitiveValues();
+            //PrintPrimitiveValues();
+            Person person = new Person
+            {
+                FirstName = "John",
+                LastName = "Smith"
+            };
+            person.Introduce();
         }
 
         static void PrintPrimitiveValues()
