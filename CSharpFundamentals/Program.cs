@@ -1,5 +1,7 @@
 ﻿using System;
 using CSharpFundamentals.Math;
+using CSharpFundamentals.ExampleArrays;
+using CSharpFundamentals.ExampleEnums;
 
 namespace CSharpFundamentals
 {
@@ -7,11 +9,13 @@ namespace CSharpFundamentals
     {
         static void Main(string[] args)
         {
-         /* 
-            PrintPrimitiveValues();
-            PersonInitializer();
-            CalculatorInitializer();
-         */
+            /* 
+               PrintPrimitiveValues();
+               PersonInitializer();
+               CalculatorInitializer();
+                Array();
+            */
+            Enum();
         }
 
         static void PrintPrimitiveValues()
@@ -44,5 +48,18 @@ namespace CSharpFundamentals
             var result = calculator.Add(1, 2);
             Console.WriteLine($"The result of sum is {result}");
         }
-    }
+
+        static void Array()
+        {
+            var array = new ExampleArrays.ExampleArrays();
+            array.PrintArrayNumbers();
+            array.PrintArrayString();
+        }
+
+        static void Enum()
+        {
+            var enumExmaple = new ExampleEnums.ExampleEnums();
+            enumExmaple.PrintingEnums();
+        }
+}
 }
