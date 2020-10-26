@@ -1,5 +1,4 @@
 ﻿using System;
-using CSharpFundamentals.ExampleString;
 using CSharpFundamentals.Math;
 
 namespace CSharpFundamentals
@@ -16,8 +15,10 @@ namespace CSharpFundamentals
                 Enum();
                 List();
                 DateTime();
+                Strings();
+                LinkedList();
             */
-            Strings();
+                Stacks();
         }
 
         static void PrintPrimitiveValues()
@@ -83,5 +84,17 @@ namespace CSharpFundamentals
             var strings = new ExampleString.ExampleString();
             strings.PrintingStrings();
         }
+
+        static void Stacks()
+        {
+            var stack = new ExampleDataStructures.Stack();
+            stack.ExampleStack();
+        }
+        static void LinkedList()
+        {
+            var stack = new ExampleDataStructures.LinkedList();
+            stack.RunLinkedList();
+        }
+
     }
 }
