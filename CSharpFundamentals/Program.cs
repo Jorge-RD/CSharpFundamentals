@@ -1,7 +1,5 @@
 ﻿using System;
 using CSharpFundamentals.Math;
-using CSharpFundamentals.ExampleArrays;
-using CSharpFundamentals.ExampleEnums;
 
 namespace CSharpFundamentals
 {
@@ -14,8 +12,9 @@ namespace CSharpFundamentals
                PersonInitializer();
                CalculatorInitializer();
                 Array();
+                Enum();
             */
-            Enum();
+            List();
         }
 
         static void PrintPrimitiveValues()
@@ -60,6 +59,12 @@ namespace CSharpFundamentals
         {
             var enumExmaple = new ExampleEnums.ExampleEnums();
             enumExmaple.PrintingEnums();
+        }
+
+        static void List()
+        {
+            var listExample = new ExampleList.ExampleList();
+            listExample.Example();
         }
 }
 }
