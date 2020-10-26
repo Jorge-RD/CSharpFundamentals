@@ -13,8 +13,9 @@ namespace CSharpFundamentals
                CalculatorInitializer();
                 Array();
                 Enum();
+                List();
             */
-            List();
+            DateTime();
         }
 
         static void PrintPrimitiveValues()
@@ -66,5 +67,11 @@ namespace CSharpFundamentals
             var listExample = new ExampleList.ExampleList();
             listExample.Example();
         }
-}
+
+        static void DateTime()
+        {
+            var dateTimeExample = new ExmapleDateTime.ExampleDateTime();
+            dateTimeExample.PrintingDateTime();
+        }
+    }
 }
