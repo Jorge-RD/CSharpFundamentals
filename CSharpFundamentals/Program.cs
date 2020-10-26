@@ -1,4 +1,5 @@
 ﻿using System;
+using CSharpFundamentals.ExampleString;
 using CSharpFundamentals.Math;
 
 namespace CSharpFundamentals
@@ -14,8 +15,9 @@ namespace CSharpFundamentals
                 Array();
                 Enum();
                 List();
+                DateTime();
             */
-            DateTime();
+            Strings();
         }
 
         static void PrintPrimitiveValues()
@@ -33,6 +35,7 @@ namespace CSharpFundamentals
             Console.WriteLine($"{typeBoolean}, {typeBoolean.GetType()}");
 
         }
+
         static void PersonInitializer()
         {
             Person person = new Person
@@ -42,6 +45,7 @@ namespace CSharpFundamentals
             };
             person.Introduce();
         }
+
         static void CalculatorInitializer()
         {
             Calculator calculator = new Calculator();
@@ -72,6 +76,12 @@ namespace CSharpFundamentals
         {
             var dateTimeExample = new ExmapleDateTime.ExampleDateTime();
             dateTimeExample.PrintingDateTime();
+        }
+
+        static void Strings()
+        {
+            var strings = new ExampleString.ExampleString();
+            strings.PrintingStrings();
         }
     }
 }
