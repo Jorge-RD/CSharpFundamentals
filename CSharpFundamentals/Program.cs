@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Diagnostics;
 using CSharpFundamentals.Math;
 
 namespace CSharpFundamentals
@@ -18,8 +19,15 @@ namespace CSharpFundamentals
                 Strings();
                 LinkedList();
                 Stacks();
-            */
                 Files();
+            */
+            Debug();
+        }
+
+        static void Debug()
+        {
+            var debug = new ExampleDebugging.ExampleDebugging();
+            debug.PrintingNumbers();
         }
 
         static void PrintPrimitiveValues()
