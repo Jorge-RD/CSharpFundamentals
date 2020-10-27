@@ -17,8 +17,9 @@ namespace CSharpFundamentals
                 DateTime();
                 Strings();
                 LinkedList();
-            */
                 Stacks();
+            */
+                Files();
         }
 
         static void PrintPrimitiveValues()
@@ -96,5 +97,10 @@ namespace CSharpFundamentals
             stack.RunLinkedList();
         }
 
+        private static void Files()
+        {
+            var files = new ExampleFiles.ExampleFile();
+            files.ExampleFiles();
+        }
     }
 }
